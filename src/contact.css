@@ -1,0 +1,266 @@
+/* ========================================
+   CONTACT SECTION
+   ======================================== */
+
+.contact {
+    min-height: 80vh;
+    padding: 100px 50px;
+    text-align: center;
+    background-color: black;
+}
+
+/* Main title */
+.contact h2 {
+    font-size: 42px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Introduction text */
+.contact > p {
+    color: lightgray;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+
+/* ========================================
+   CONTACT INFO
+   ======================================== */
+
+.contact-info {
+    max-width: 900px;
+    margin: 0 auto 30px;
+
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+/* Individual contact information */
+.contact-info p {
+    color: lightgray;
+    margin: 0;
+}
+
+/* Labels: Email, Phone, Location */
+.contact-info strong {
+    color: cyan;
+}
+
+/* Email and phone links */
+.contact-info a {
+    color: lightgray;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: cyan;
+}
+
+
+/* ========================================
+   SOCIAL LINKS
+   ======================================== */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+/* Social buttons */
+.social-links a {
+    padding: 10px 20px;
+    border: 1px solid cyan;
+    border-radius: 5px;
+
+    color: cyan;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+/* Social button hover */
+.social-links a:hover {
+    background-color: cyan;
+    color: black;
+    transform: translateY(-3px);
+    box-shadow: 0 0 12px cyan;
+}
+
+
+/* ========================================
+   CONTACT FORM
+   ======================================== */
+
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+
+    padding: 35px;
+
+    background-color: darkslategray;
+
+    border: 1px solid gray;
+    border-radius: 10px;
+
+    text-align: left;
+
+    transition: 0.3s ease;
+}
+
+/* Form hover effect */
+.contact-form:hover {
+    border-color: cyan;
+    box-shadow: 0 0 20px cyan;
+}
+
+
+/* ========================================
+   FORM GROUP
+   ======================================== */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Form labels */
+.form-group label {
+    display: block;
+
+    color: white;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+
+/* ========================================
+   INPUTS & TEXTAREA
+   ======================================== */
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 12px 15px;
+
+    background-color: black;
+
+    border: 1px solid gray;
+    border-radius: 5px;
+
+    color: white;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+/* Textarea specific settings */
+.form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+/* Placeholder text */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: gray;
+}
+
+
+/* ========================================
+   INPUT FOCUS
+   ======================================== */
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: cyan;
+    box-shadow: 0 0 10px cyan;
+}
+
+
+/* ========================================
+   SEND BUTTON
+   ======================================== */
+
+.contact-form button {
+    width: 100%;
+
+    padding: 13px 20px;
+
+    background-color: cyan;
+    color: black;
+
+    border: 2px solid cyan;
+    border-radius: 5px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+/* Button hover */
+.contact-form button:hover {
+    background-color: black;
+    color: cyan;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 0 15px cyan;
+}
+
+
+/* ========================================
+   MOBILE RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 768px) {
+
+    .contact {
+        padding: 70px 20px;
+    }
+
+    .contact h2 {
+        font-size: 34px;
+    }
+
+    .contact > p {
+        font-size: 15px;
+        margin-bottom: 35px;
+    }
+
+    /* Stack contact information */
+    .contact-info {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Stack social buttons */
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .social-links a {
+        width: 150px;
+        text-align: center;
+    }
+
+    /* Smaller form on mobile */
+    .contact-form {
+        padding: 25px 20px;
+    }
+}

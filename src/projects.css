@@ -1,0 +1,285 @@
+/* =========================
+   PROJECTS SECTION
+   ========================= */
+
+.projects {
+    /* Minimum height of the section */
+    min-height: 80vh;
+
+    /* Space inside the section */
+    padding: 100px 50px;
+
+    /* Centers the section title */
+    text-align: center;
+
+    /* Main dark background */
+    background-color: black;
+}
+
+
+/* =========================
+   SECTION TITLE
+   ========================= */
+
+.projects h2 {
+    /* Large section title */
+    font-size: 42px;
+
+    /* White title */
+    color: white;
+
+    /* Space below the title */
+    margin-bottom: 50px;
+}
+
+
+/* =========================
+   PROJECT CONTAINER
+   ========================= */
+
+.project-container {
+    /* Places project cards in a row */
+    display: flex;
+
+    /* Centers the cards */
+    justify-content: center;
+
+    /* Space between cards */
+    gap: 30px;
+
+    /* Allows cards to move to the next line */
+    flex-wrap: wrap;
+}
+
+
+/* =========================
+   PROJECT CARD
+   ========================= */
+
+.project-card {
+    /* Width of each project card */
+    width: 320px;
+
+    /* Dark gray background */
+    background-color: darkslategray;
+
+    /* Subtle border */
+    border: 1px solid gray;
+
+    /* Rounded corners */
+    border-radius: 10px;
+
+    /* Hides anything outside the rounded corners */
+    overflow: hidden;
+
+    /* Smooth animation */
+    transition: 0.3s ease;
+}
+
+
+/* =========================
+   PROJECT IMAGE
+   ========================= */
+
+.project-card img {
+    /* Image fills the card width */
+    width: 100%;
+
+    /* Fixed image height */
+    height: 170px;
+
+    /* Keeps the image proportional */
+    object-fit: cover;
+
+    /* Smooth zoom animation */
+    transition: 0.3s ease;
+}
+
+
+/* =========================
+   PROJECT CONTENT
+   ========================= */
+
+.project-content {
+    /* Space inside the content area */
+    padding: 25px 20px;
+}
+
+
+/* Project title */
+
+.project-card h3 {
+    /* White title */
+    color: white;
+
+    /* Space below the title */
+    margin-bottom: 15px;
+
+    /* Slightly larger title */
+    font-size: 21px;
+}
+
+
+/* Project description */
+
+.project-card p {
+    /* Light gray text */
+    color: lightgray;
+
+    /* Comfortable reading spacing */
+    line-height: 1.7;
+
+    /* Space below paragraph */
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   TECHNOLOGIES
+   ========================= */
+
+.technologies {
+    /* Slightly smaller than the description */
+    font-size: 14px;
+
+    /* Cyan gives the technology information
+       a developer/AI look */
+    color: cyan;
+}
+
+
+/* The "Technologies:" label */
+
+.technologies strong {
+    /* White label */
+    color: white;
+}
+
+
+/* =========================
+   PROJECT BUTTONS
+   ========================= */
+
+.project-buttons {
+    /* Places buttons next to each other */
+    display: flex;
+
+    /* Centers the buttons */
+    justify-content: center;
+
+    /* Space between buttons */
+    gap: 15px;
+
+    /* Space above buttons */
+    margin-top: 20px;
+}
+
+
+/* General button style */
+
+.project-buttons a {
+    /* Removes the default underline */
+    text-decoration: none;
+
+    /* Space inside the button */
+    padding: 10px 20px;
+
+    /* Rounded corners */
+    border-radius: 5px;
+
+    /* Cyan button */
+    background-color: cyan;
+
+    /* Black text */
+    color: black;
+
+    /* Smooth hover animation */
+    transition: 0.3s ease;
+}
+
+
+/* Button hover */
+
+.project-buttons a:hover {
+    /* Transparent background */
+    background-color: black;
+
+    /* Cyan text */
+    color: cyan;
+
+    /* Cyan border */
+    border: 1px solid cyan;
+
+    /* Small upward movement */
+    transform: translateY(-3px);
+
+    /* Subtle glow */
+    box-shadow: 0 0 12px cyan;
+}
+
+
+/* =========================
+   CARD HOVER EFFECT
+   ========================= */
+
+.project-card:hover {
+    /* Moves the card slightly upward */
+    transform: translateY(-8px);
+
+    /* Cyan border */
+    border-color: cyan;
+
+    /* Subtle cyan glow */
+    box-shadow: 0 0 20px cyan;
+}
+
+
+/* Zoom image when hovering over card */
+
+.project-card:hover img {
+    /* Slightly enlarges the image */
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .projects {
+        /* Smaller padding on mobile */
+        padding: 70px 20px;
+    }
+
+
+    .projects h2 {
+        /* Smaller title */
+        font-size: 34px;
+
+        /* Less space below title */
+        margin-bottom: 35px;
+    }
+
+
+    .project-container {
+        /* Smaller gap on mobile */
+        gap: 25px;
+    }
+
+
+    .project-card {
+        /* Full available width */
+        width: 100%;
+
+        /* Prevents card from becoming too wide */
+        max-width: 350px;
+    }
+
+
+    .project-card img {
+        /* Slightly smaller image */
+        height: 160px;
+    }
+}

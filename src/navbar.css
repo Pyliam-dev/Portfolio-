@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    background-color: black
+}
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+ }
+ .navbar li {
+    color: white;
+    cursor: pointer;
+ }
+ .navbar a:hover {
+    color: cyan;
+ }
+ .navbar a {
+    color: white;
+    text-decoration: none;
+ }

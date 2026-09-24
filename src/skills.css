@@ -1,0 +1,194 @@
+/* =========================
+   SKILLS SECTION
+   ========================= */
+
+.skills {
+    /* Minimum height of the section */
+    min-height: 80vh;
+
+    /* Space inside the section */
+    padding: 100px 50px;
+
+    /* Centers the title */
+    text-align: center;
+
+    /* Black background */
+    background-color: black;
+}
+
+
+/* =========================
+   SECTION TITLE
+   ========================= */
+
+.skills h2 {
+    /* Large title */
+    font-size: 42px;
+
+    /* White title */
+    color: white;
+
+    /* Space below the title */
+    margin-bottom: 50px;
+}
+
+
+/* =========================
+   SKILLS CONTAINER
+   ========================= */
+
+.skill-container {
+    /* Places the cards in a row */
+    display: flex;
+
+    /* Centers the cards */
+    justify-content: center;
+
+    /* Space between cards */
+    gap: 30px;
+
+    /* Allows cards to move to the next line */
+    flex-wrap: wrap;
+}
+
+
+/* =========================
+   SKILL CARD
+   ========================= */
+
+.skill-card {
+    /* Card width */
+    width: 230px;
+
+    /* Space inside the card */
+    padding: 30px 20px;
+
+    /* Dark gray card */
+    background-color: darkslategray;
+
+    /* Subtle border */
+    border: 1px solid gray;
+
+    /* Rounded corners */
+    border-radius: 10px;
+
+    /* Smooth hover animation */
+    transition: 0.3s ease;
+}
+
+
+/* =========================
+   CARD TITLE
+   ========================= */
+
+.skill-card h3 {
+    /* White title */
+    color: white;
+
+    /* Space below title */
+    margin-bottom: 15px;
+
+    /* Slightly larger title */
+    font-size: 20px;
+}
+
+
+/* =========================
+   CARD DESCRIPTION
+   ========================= */
+
+.skill-card p {
+    /* Light gray description */
+    color: lightgray;
+
+    /* Comfortable line spacing */
+    line-height: 1.7;
+
+    /* Remove unnecessary bottom margin */
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   CARD HOVER EFFECT
+   ========================= */
+
+.skill-card:hover {
+    /* Moves the card slightly upward */
+    transform: translateY(-8px);
+
+    /* Cyan border when hovering */
+    border-color: cyan;
+
+    /* Subtle cyan glow */
+    box-shadow: 0 0 20px cyan;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .skills {
+        /* Smaller padding on mobile */
+        padding: 70px 20px;
+    }
+
+
+    .skills h2 {
+        /* Smaller title */
+        font-size: 34px;
+
+        /* Less space below title */
+        margin-bottom: 35px;
+    }
+
+
+    .skill-container {
+        /* Cards remain centered */
+        justify-content: center;
+
+        /* Smaller gap */
+        gap: 20px;
+    }
+
+
+    .skill-card {
+        /* Cards become wider on small screens */
+        width: 100%;
+
+        /* But don't let them become too wide */
+        max-width: 350px;
+    }
+}
+/* =========================
+   SKILL ICONS
+   ========================= */
+
+.skill-icon {
+    /* Cyan gives the icons the technology/AI look */
+    color: cyan;
+
+    /* Size of the icon */
+    width: 45px;
+    height: 45px;
+
+    /* Space between the icon and the title */
+    margin-bottom: 20px;
+
+    /* Smooth animation when hovering */
+    transition: 0.3s ease;
+}
+
+
+/* Icon hover effect */
+
+.skill-card:hover .skill-icon {
+    /* Makes the icon slightly bigger */
+    transform: scale(1.15);
+
+    /* Creates a subtle cyan glow */
+    filter: drop-shadow(0 0 8px cyan);
+}

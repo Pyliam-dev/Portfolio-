@@ -1,0 +1,210 @@
+/* =========================
+   ABOUT SECTION
+   ========================= */
+
+.about {
+    /* Places the image and the text side by side */
+    display: flex;
+
+    /* Aligns both columns vertically */
+    align-items: center;
+
+    /* Space between the image and the text */
+    gap: 70px;
+
+    /* Space inside the section */
+    padding: 100px 50px;
+
+    /* Minimum height of the section */
+    min-height: 80vh;
+
+    /* Dark background */
+    background-color: black;
+}
+
+
+/* =========================
+   ABOUT IMAGE
+   ========================= */
+
+.about-image {
+    /* Takes half of the available space */
+    flex: 1;
+
+    /* Centers the image inside its column */
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Image itself */
+
+.about-image img {
+    /* Makes the image responsive */
+    width: 100%;
+
+    /* Prevents the image from becoming too large */
+    max-width: 350px;
+
+    /* Gives the image rounded corners */
+    border-radius: 15px;
+
+    /* Thin cyan border */
+    border: 2px solid cyan;
+
+    /* Creates a subtle cyan glow */
+    box-shadow: 0 0 20px cyan;
+
+    /* Makes hover animation smooth */
+    transition: 0.3s ease;
+}
+
+
+/* Image hover effect */
+
+.about-image img:hover {
+    /* Slightly enlarges the image */
+    transform: scale(1.03);
+
+    /* Stronger glow when hovering */
+    box-shadow: 0 0 30px cyan;
+}
+
+
+/* =========================
+   ABOUT CONTENT
+   ========================= */
+
+.about-content {
+    /* Takes the other half of the available space */
+    flex: 1;
+}
+
+
+/* About heading */
+
+.about-content h2 {
+    /* Large heading */
+    font-size: 42px;
+
+    /* White heading */
+    color: white;
+
+    /* Space below the heading */
+    margin-bottom: 25px;
+
+    /* Makes the heading stand out */
+    font-weight: bold;
+}
+
+
+/* Paragraphs */
+
+.about-content p {
+    /* Light gray text */
+    color: lightgray;
+
+    /* Makes the text easier to read */
+    line-height: 1.8;
+
+    /* Space between paragraphs */
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   INFORMATION
+   ========================= */
+
+.about-info {
+    /* Space before the information block */
+    margin-top: 30px;
+
+    /* Adds a small line on the left */
+    border-left: 3px solid cyan;
+
+    /* Space between the border and text */
+    padding-left: 20px;
+}
+
+
+/* Information paragraphs */
+
+.about-info p {
+    /* White text for important information */
+    color: white;
+
+    /* Smaller spacing */
+    margin-bottom: 10px;
+}
+
+
+/* Labels such as Education,
+   Specialization and Skills */
+
+.about-info strong {
+    /* Cyan makes the labels stand out */
+    color: cyan;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .about {
+        /* Changes from two columns
+           to one column */
+        flex-direction: column;
+
+        /* Smaller spacing on mobile */
+        padding: 70px 20px;
+
+        /* Centers the content */
+        text-align: center;
+
+        /* Smaller gap between image and text */
+        gap: 40px;
+    }
+
+
+    .about-image {
+        /* Full width on mobile */
+        width: 100%;
+    }
+
+
+    .about-image img {
+        /* Smaller image on mobile */
+        max-width: 250px;
+    }
+
+
+    .about-content {
+        /* Full width on mobile */
+        width: 100%;
+    }
+
+
+    .about-content h2 {
+        /* Smaller heading on mobile */
+        font-size: 34px;
+    }
+
+
+    .about-info {
+        /* Removes the left border on mobile */
+        border-left: none;
+
+        /* Adds a cyan line at the top instead */
+        border-top: 2px solid cyan;
+
+        /* Space above the information */
+        padding-top: 20px;
+
+        /* Removes left padding */
+        padding-left: 0;
+    }
+}
