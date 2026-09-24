@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./contact.css";
 
 function Contact() {
@@ -17,9 +18,33 @@ function Contact() {
     };
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle form submission logic here
-    };
+    e.preventDefault();
+
+    emailjs
+        .send(
+            "service_t9I6nxg",
+            "template_p0aisiz",
+            formData,
+            {
+                publicKey: "BYpIV33ykfbL3clPq"
+            }
+        )
+        .then(
+            () => {
+                alert("Message sent successfully!");
+                
+                setFormData({
+                    name: "",
+                    email: "",
+                    message: ""
+                });
+            },
+            (error) => {
+                console.error("FAILED...", error);
+                alert("Failed to send the message.");
+            }
+        );
+};
 
     return (
         <section className="contact" id="contact">
