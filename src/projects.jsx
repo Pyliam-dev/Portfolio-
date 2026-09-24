@@ -6,7 +6,7 @@ const projects = [
         description:
             "A web application designed to help restaurants manage their menu, reservations and customer information.",
         technologies: "HTML, CSS, JavaScript, PHP and MySQL",
-        image: "/restaurant-project.jpg"
+        image: `${import.meta.env.BASE_URL}restaurant-project.jpg`
     },
 
     {
@@ -14,7 +14,7 @@ const projects = [
         description:
             "A school website concept designed to present ESTLC, its academic programs and provide students with access to their accounts.",
         technologies: "HTML, CSS, JavaScript, PHP and MySQL",
-        image: "/school.png"
+        image: `${import.meta.env.BASE_URL}school.png`
     },
 
     {
@@ -22,7 +22,7 @@ const projects = [
         description:
             "A personal portfolio website showcasing my skills, projects and experience.",
         technologies: "React, JavaScript, HTML and CSS",
-        image: "/portfolio-project.jpg"
+        image: `${import.meta.env.BASE_URL}portfolio-project.jpg`
     }
 ];
 

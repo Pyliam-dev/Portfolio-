@@ -3,7 +3,7 @@ function About(params) {
     return(
         <section className="about" id="About">
             <div className="about-image">
-                <img src="/Picture.png" alt="about-image" />
+                <img src={`${import.meta.env.BASE_URL}Picture.png`} alt="about-image" />
             </div>
             <div className="about-content">
                 <h2>About Me</h2>
